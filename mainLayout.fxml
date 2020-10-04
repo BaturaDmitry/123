@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Файл">
+            <items>
+                  <MenuItem fx:id="miOpenFile" mnemonicParsing="false" text="Открыть" />
+              <MenuItem fx:id="miSaveFile" mnemonicParsing="false" text="Сохранить" />
+                  <MenuItem fx:id="miCloseFile" mnemonicParsing="false" text="Закрыть" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="О программе">
+            <items>
+              <MenuItem fx:id="miAbout" mnemonicParsing="false" text="Справка" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TextArea fx:id="txarFileEditor" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font></TextArea>
+   </center>
+   <bottom>
+      <Button fx:id="btnDoHalstead" mnemonicParsing="false" prefHeight="21.0" prefWidth="323.0" text="Рассчитать метрику Холстеда" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </Button>
+   </bottom>
+</BorderPane>
